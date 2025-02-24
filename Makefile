@@ -1,2 +1,2 @@
 assembler:
-	gcc assembler.c -o assembler
+	gcc assembler.c map.c -o assembler

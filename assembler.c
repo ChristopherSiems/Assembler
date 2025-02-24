@@ -1,4 +1,4 @@
-#include "map.c"
+#include "map.h"
 #include <ctype.h>
 #include <stddef.h>
 #include <stdio.h>
@@ -8,10 +8,11 @@
 int main(int argc, char **argv) {
 
   // define dest mappings
-  map map_dest = createMap(7);
+  map map_dest = createMap(8);
   insertKey(map_dest, "M", "001");
   insertKey(map_dest, "D", "010");
   insertKey(map_dest, "DM", "011");
+  insertKey(map_dest, "MD", "011");
   insertKey(map_dest, "A", "100");
   insertKey(map_dest, "AM", "101");
   insertKey(map_dest, "AD", "110");
